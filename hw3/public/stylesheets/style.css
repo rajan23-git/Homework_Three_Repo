@@ -1,0 +1,114 @@
+/*Author: Pranav Rajan*/
+/* adding a solid border and aqua blue background 
+to the CheeseCake header*/
+h1
+{
+    background-color:aqua;
+    border-style: solid;
+    border-width: thick;
+    border-color: #000000;
+}
+/* adding a dashed border and aqua blue background to the 
+table containing the radio buttons and the drop down */
+
+table
+{
+    background-color:aqua;
+    border-style: dashed;
+    border-width: thick;
+    border-color: #000000;
+}
+/* adding a dashed border and aqua 
+blue background to the textarea */
+textarea
+{
+    background-color:aqua;
+    border-style: dashed;
+    border-width: thick;
+    border-color: #000000;
+
+}
+/*
+changing the fonts of the bulleted lists, the headers
+and the paragraph elements while adding a dashed border around the bulleted list
+*/
+ul
+{
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    border-style: dashed;
+    border-width: thick;
+    border-color: #000000;
+}
+
+h3
+{
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+
+}
+h1
+{
+    font-family:'Courier New', Courier, monospace;
+
+}
+p
+{
+    font-family:'Courier New', Courier, monospace;
+
+}
+/*for this assignment I implemented the hoverable dropdown menu using a starter code*/
+/*template from w3schools.com, and then I made the necessary changes to this template*/
+/*this is the beginning of the modified template from w3schools*/
+
+/* button that I hover over to display the dropdown months */
+.monthButton 
+{
+    background-color: blue;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+}
+  
+  /* this is the <div> element used to capture all of the dropdown content */
+  .monthDropdown 
+{
+    position: relative;
+    display: inline-block;
+}
+  
+  /* Dropdown Content that remains hidden until you hover over button */
+.monthDropdownContent 
+{
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    
+  }
+  
+  /* Links inside the dropdown */
+  .monthDropdownContent a 
+{
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    overflow:auto;
+
+}
+  
+  /* sets the color of drop down options after user hovers*/
+  .monthDropdownContent a:hover { background-color: #ddd;}
+  
+  /* displays the dropdown menu after button is hovered over*/
+  .monthDropdown:hover .monthDropdownContent {display: block; }
+  
+  /* keeps the background color of the button the same even after you hover over it.keeps it at blue */
+  .monthDropdown:hover .monthButton {background-color: blue;}
+/*this is the end of the modified template from w3schools*/
+
+
+
+

@@ -1,0 +1,92 @@
+<!-- Author: Pranav Rajan--> 
+        
+<!DOCTYPE html>
+<html>
+    <head>
+<!-- link to my stylesheet-->        
+        <link rel="stylesheet" href="stylesheets/style.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"/></script>
+        <script src="javascripts/orderAction.js"> </script>
+
+       <script src="javascripts/dropdownStuff.js"> </script>
+       
+        
+    </head>
+
+    <body>
+        
+        <h1>Cheesecake Order Form</h1>
+        <img src="https://upload.wikimedia.org/wikipedia/commons/9/9c/Mondays_at_Il_Forno_-_Cheesecake_with_strawberry_sauce.jpg" width="150" height="150">
+        <p id="toppingLabel">Quantity Topping</p>
+        <table>
+            <tr>
+                <td>
+<!-- used a table in order to display my dropdown menu and radio buttons side by side -->                    
+                    <select id="Quantity">
+<!-- up to three servings of each topping can be selected -->                        
+                        <option value="0">0</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                    </select>   
+                </td>
+      
+                <td>
+                    <form>
+<!-- each label is linked to a radio button, and radio buttons are to the right of dropdown -->                        
+                        <input type="radio" id="plain" name="ToppingType" value="Plain">
+                        <label for="plain">Plain</label><br>
+                        <input type="radio" id="cherry" name="ToppingType" value="Cherry">
+                        <label for="cherry">Cherry</label><br>
+                        <input type="radio" id="chocolate" name="ToppingType" value="Chocolate">
+                        <label for="chocolate">Chocolate</label>
+                    </form>
+                </td>
+            </tr>
+    
+        </table>
+        <p id="notesLabel">Notes:</p>
+<!-- textarea placeholder has greyed out text displayed to guide the user on what to type into text area -->        
+        <textarea placeholder="Enter any special instructions here." rows="5" cols="50"></textarea>
+        <br>
+        <br>
+<!-- this is the order button -->
+        <button type="button" id="orderButton">Order</button>
+        <br>
+        <h3>Orders for  </h3>
+<!-- In this assignment, for the hoverable dropdown menu I borrowed-->
+<!-- A template off of w3schools.com and made changes to this template to suit my webpage-->
+<!-- this is the beginning of the template that I modified from w3schools-->         
+<!-- this is the drop down menu of months to select from -->
+            <div class="monthDropdown">
+<!-- this is the button that you hover over for drop-down to appear -->
+                <button class="monthButton">Jan</button>
+<!-- this container houses all the month options in the dropdown menu -->
+                <div class="monthDropdownContent">
+                    <a href="#" class="dropdownOption" >Jan</a>
+                    <a href="#" class="dropdownOption">Feb</a>
+                    <a href="#" class="dropdownOption">Mar</a>
+                    <a href="#" class="dropdownOption">Apr</a>
+                    <a href="#" class="dropdownOption">May</a>
+                    <a href="#" class="dropdownOption">Jun</a>
+                    <a href="#" class="dropdownOption">Jul</a>
+                    <a href="#" class="dropdownOption">Aug</a>
+                    <a href="#" class="dropdownOption">Sept</a>
+                    <a href="#" class="dropdownOption">Oct</a>
+                    <a href="#" class="dropdownOption">Nov</a>
+                    <a href="#" class="dropdownOption">Dec</a>
+
+                </div>
+            </div> 
+<!-- this is the end of the template that I modified from w3schools-->         
+       
+<!-- this is an unordered bulleted list with the total orders last month -->        
+        <ul>
+            <li>11 cherry</li>
+            <li>17 chocolate</li>
+            <li>31 plain</li>
+            
+        </ul>  
+    </body>
+
+</html>
