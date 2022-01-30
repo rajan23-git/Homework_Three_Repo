@@ -1,4 +1,5 @@
-
+//Author: Pranav Rajan
+//event handler stores function to be used when button clicked
 orderEventHandler= 
 function()
 {
@@ -48,8 +49,9 @@ var orderText=$("textarea").val();
                 }
 }     
 
-$(document).ready(function(){
-    
+$(document).ready(function()
+{
+//links button with Event Handler and executes method whenever clicked    
 $("#orderButton").click(orderEventHandler);
 
-  });
+});
